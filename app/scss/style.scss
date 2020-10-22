@@ -84,12 +84,12 @@
     }
     &__title{
         font-size: 96px;
-        line-height: 115px;
+        line-height: 140px;
         @extend %sf-semibold;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
     }
     &__text{
-        margin: 25px 0 35px;
+        margin: 30px 0 40px;
         max-width: 325px;
     }
     &__social-item{
@@ -152,7 +152,7 @@
     background-color: #fff;
     position: absolute;
     cursor: pointer;
-    bottom: -45px;
+    bottom: -48px;
     right: 0;
     z-index: 5;
     svg{
