@@ -57,6 +57,25 @@
             padding-top: 40px;
         }
     }
+    .questions{
+        .title{
+            padding-top: 40px;
+            margin-bottom: 20px;
+        }
+    }
+    .questions__item-title{
+        font-size: 18px;
+        padding: 16px 10px 16px 30px;
+        line-height: 22px;
+    }
+    .questions__item-text{
+        padding: 0 5px 40px 30px ;
+    }
+    .questions__item-title::after{
+        width: 60px;
+        height: 54px;
+        right: -60px;
+    }
 
 }
 
@@ -79,8 +98,14 @@
     .specification__box-3::before{
         width: 190px;
         height: 78px;
-        left: -230px;
+        left: -220px;
         top: 44px;
+    }
+    .specification__box-2::before{
+        width: 310px;
+        height: 93px;
+        left: 200px;
+        top: -65px;
     }
     
 }
@@ -232,6 +257,12 @@
         line-height: 22px;
         top: -85px;
     }
+    .specification__box-1::before,
+    .specification__box-2::before,
+    .specification__box-3::before,
+    .specification__box-4::before{
+        display: none;
+    }
 
 }
 
@@ -251,6 +282,26 @@
     .products__slider-box{
         padding-bottom: 80px;
     }
+    .contacts__form{
+        width: 100%;
+        margin-right: 0;
+        order: 1;
+    }
+    .contacts__inner{
+        flex-wrap: wrap;
+       
+    }
+
+}
+
+@media (max-width: 877px){
+    .specification__box-4,
+    .specification__box-2{
+        margin-top: 50px;
+    }
+    .specification__inner{
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 787px){
@@ -266,6 +317,30 @@
     .benefits__info{
         width: 100%;
     }
+    .specification__inner{
+        padding-left: 0;
+        display: block;
+    }
+    .specification__box{
+        width: 100%;
+    }
+    .specification__box-4,
+    .specification__box-2{
+        margin-top: 25px;
+    }
+    .specification__item--center{
+        margin-top: 0;
+    }
+    .questions__items{
+        padding-right: 60px;
+    }
+    .questions__item-text{
+        padding: 0px 15px 40px 30px;
+    }
+    .contacts__inner{
+        padding-left: 0;
+    }
+    
 }
 
 @media (max-width: 680px){
@@ -326,6 +401,32 @@
     }
     .benefits__img::before{
         top: 8px;
+    }
+}
+@media (max-width: 414px){
+    .questions__item-title::after{
+        right: 0;
+    }
+    .questions__items{
+        padding-right: 0;
+    }
+    .questions__item-title{
+        padding: 15px 75px 15px 15px;
+    }
+    .contacts__form-line{
+        display: block;
+    }
+        
+    .contacts__form-input{
+        width: 100%;
+        margin-top: 10px;
+    } 
+}
+@media (max-width: 400px){
+    .contacts__social-list{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
     }
 }
 
